@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>😎😎Metodologías BEM y camelCase😎😎</title>  
+</head>
+<body class="pagina">
+
+  <!-- Bloque 1: header -->
+  <header class="pagina__header header">
+    <h1 class="header__titulo"><strong>INVESTIGACIÓN Y APLICACIÓN DE METODOLOGÍAS BEM Y CAMELCASE</strong></h1>
+    <p class="header__descripcion">
+      Esta página web es creada como parte del aprendizaje de <strong>HTML</strong> y <strong>CSS</strong>, aplicando las metodologías <strong>BEM</strong> y <strong>camelCase</strong> para escribir código organizado, claro y reutilizable.</p>
+  </header>
+
+  <!-- Bloque 2: contenido -->
+  <main class="pagina__contenido contenido">
+    
+    <!-- Sección BEM -->
+    <section class="contenido__seccion seccion seccion--bem">
+      <h2 class="seccion__titulo"><strong>BEM</strong></h2>
+      <h3 class="seccion__subtitulo"><strong><u><em>Ventajas de usar BEM</em></u></strong></h3>
+      <ol class="seccion__lista lista">
+        <li class="lista__item">Evita conflictos entre clases</li>
+        <li class="lista__item">Es fácil de leer y entender</li>
+        <li class="lista__item">Reutilizable y escalable</li>
+        <li class="lista__item">Ideal para trabajar en equipo</li>
+        <li class="lista__item">No depende de selectores anidados o IDs</li>
+      </ol>
+
+      <h3 class="seccion__subtitulo"><strong><u><em>Ejemplos de código usando BEM</em></u></strong></h3>
+      <ul class="seccion__lista lista">
+        <li class="lista__item">Block: card, menu, button</li>
+        <li class="lista__item">Element: card__title, menu__item</li>
+        <li class="lista__item">Modifier: button--primary, menu__item--active</li>
+      </ul>
+    </section>
+
+    <!-- Sección camelCase -->
+    <section class="contenido__seccion seccion seccion--camel">
+      <h2 class="seccion__titulo"><strong>CAMEL CASE</strong></h2>
+      <h3 class="seccion__subtitulo"><strong><u><em>Situaciones donde se usa camelCase</em></u></strong></h3>
+      <ol class="seccion__lista lista">
+        <li class="lista__item">Variables: nombreCompleto, edadUsuario</li>
+        <li class="lista__item">Funciones: obtenerDatos, calcularTotalFactura</li>
+        <li class="lista__item">Propiedades de objetos: nombreUsuario, correoElectronico</li>
+        <li class="lista__item">Parámetros: nombreUsuario, mensajePersonalizado</li>
+        <li class="lista__item">Se usa en JavaScript, Java, Python</li>
+      </ol>
+
+      <h3 class="seccion__subtitulo"><strong><u><em>Ejemplos de código usando camelCase</em></u></strong></h3>
+      <ul class="seccion__lista lista">
+        <li class="lista__item">Variables: nombreUsuario, esAdministrador</li>
+        <li class="lista__item">Funciones: calcularEdadNacimiento, anioActual</li>
+        <li class="lista__item">Parámetros: saludarUsuario, mensajePersonalizado</li>
+        <li class="lista__item">Objetos: nombreCompleto, correoElectronico</li>
+        <li class="lista__item">Funciones flecha: modernas en JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- TABLA COMPARATIVA -->
+    <section class="comparativa">
+      <table class="tabla-comparativa" border="1">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>BEM (Block <i>Element Modifier</i>)</th>
+            <th><span>camelCase</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tipo</td>
+            <td>Convención de nombres para clases en CSS</td>
+            <td>Convención de nombres para variables y funciones</td>
+          </tr>
+          <tr>
+            <td>Uso principal</td>
+            <td>CSS (estructura y estilos de componentes)</td>
+            <td>Programación (JavaScript, Java, Python, etc.)</td>
+          </tr>
+          <tr>
+            <td>Separación</td>
+            <td>Usa __ para elementos y -- para modificadores</td>
+            <td>Usa mayúsculas al inicio de cada palabra (excepto la primera)</td>
+          </tr>
+          <tr>
+            <td>Ejemplo básico</td>
+            <td><code>button__icon--active</code></td>
+            <td><code>iconoActivo</code></td>
+          </tr>
+          <tr>
+            <td>Legibilidad</td>
+            <td>Alta, especialmente en estructuras complejas de UI</td>
+            <td>Alta, muy usada en lógica de programación</td>
+          </tr>
+          <tr>
+            <td>Soporte</td>
+            <td>Muy usado en HTML/CSS y frameworks como React</td>
+            <td>Muy común en múltiples lenguajes de programación</td>
+          </tr>
+          <tr>
+            <td>Estilo visual</td>
+            <td><code>bloque__elemento--modificador</code></td>
+            <td><code>miNombreDeVariable</code></td>
+          </tr>
+          <tr>
+            <td>Lenguaje relacionado</td>
+            <td>HTML, CSS, SASS, LESS</td>
+            <td>JavaScript, Java, Python, C#, etc.</td>
+          </tr>
+          <tr>
+            <td>Ventaja clave</td>
+            <td>Facilita el mantenimiento de estilos escalables</td>
+            <td>Mejora la legibilidad y consistencia en el código lógico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- TABLA FINAL VISUAL -->
+    <section class="metodologia">
+      <h3><strong><u><em>¿Cuándo usar cada metodología?</em></u></strong></h3>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th></th>
+            <th>🔹 Usa <strong>BEM</strong></th>
+            <th>🔹 Usa <strong>camelCase</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🔸 HTML/CSS</td>
+            <td style="text-align:center;">✅</td>
+            <td style="text-align:center;">❌</td>
+          </tr>
+          <tr>
+            <td>🔸 JS/Java/Python</td>
+            <td style="text-align:center;">❌</td>
+            <td style="text-align:center;">✅</td>
+          </tr>
+          <tr>
+            <td>🔸 Estilos visuales y componentes UI</td>
+            <td style="text-align:center;">✅</td>
+            <td style="text-align:center;">❌</td>
+          </tr>
+          <tr>
+            <td>🔸 Funciones, variables, objetos, lógica</td>
+            <td style="text-align:center;">❌</td>
+            <td style="text-align:center;">✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Imágenes ilustrativas -->
+   <section class="contenido_visual">
+      <h2 class="seccion__titulo"><strong>Aplicación</strong></h2>
+      <h3 class="seccion__subtitulo"><strong><u><em>Ejemplos visuales usando CSS que demuestren la aplicacion del BEM</em></u></strong></h3>
+      <ol class="seccion__lista lista">
+        <li class="lista__item">card → es el bloque (representa un componente independiente).</li>
+        <li class="lista__item">card__title, card__description, card__button → son elementos (partes del bloque).</li>
+        <li class="lista__item">card__button--primary → es un modificador (variante del botón)</li>
+     </ol>
+
+        <img src="image2.jpg" alt="Ilustración sobre BEM" class="imagenes__item">
+        <img src="image4.jpg" alt="Ilustración sobre camelCase" class="imagenes__item">
+
+    </section>
+  
+  <!-- Bloque 3: fuentes -->
+  <section class="fuentes">
+    <h3 class="fuentes__titulo"><strong><u><em>Fuentes de información</em></u></strong></h3>
+    <ul class="fuentes__lista">
+      <li class="fuentes__item"><a href="https://isca.dev/blog/bem/" target="_blank">Metodología BEM</a></li>
+      <li class="fuentes__item"><a href="https://es.wikipedia.org/wiki/Camel_case" target="_blank">camelCase en wikipedia</a></li>
+    </ul>
+  </section>
+
+  <!-- Bloque 4: footer -->
+  <footer class="pagina__footer footer">
+    <p class="footer__autor">Creado por <strong>Raquel Castro Puga</strong> - Estudiante de Desarrollo de la Información</p>
+    <p class="footer__nota"><em>Este proyecto fue desarrollado como parte del aprendizaje de HTML y CSS</em></p>
+    <p class="footer__mail">raquel.castrop@istpargentina.edu.pe</p>
+    <p class="footer__instituto">Instituto Superior Tecnológico Público Argentina</p>
+    <p class="footer__docente">Docente: Giovanni Emilio Ramírez Berrocal</p>
+  </footer>
+
+</body>
+</html>
