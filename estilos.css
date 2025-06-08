@@ -1,0 +1,142 @@
+/* ====== BLOQUE: header ====== */
+.header {
+  background-color: #dff0ff;
+  padding: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.pagina {
+  background-color: #e0f7ff; /* Un celeste claro */
+}
+
+.header__titulo {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.header__descripcion {
+  font-size: 1em;
+  color: #333;
+}
+
+/* ====== BLOQUE: seccion ====== */
+.seccion {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.seccion__titulo {
+  font-size: 1.5em;
+  color: #004080;
+}
+
+.seccion__subtitulo {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista__item {
+  margin: 8px 0;
+}
+
+/* Modificadores de seccion */
+.seccion--bem {
+  background-color: #f9f9ff;
+  border-left: 5px solid #4a90e2;
+}
+
+.seccion--camel {
+  background-color: #fff8f0;
+  border-left: 5px solid #f5a623;
+}
+
+.comparativa {
+ background-color: #e9e0e8e8;
+border-left: 5px solid #cc23db;
+  margin: 30px 20px;
+  padding: 15px;   
+}
+
+.metodologia {
+  background-color: #c0dfcbe8;
+  border-left: 5px solid #23db32;
+  margin: 30px 20px;
+  padding: 15px;  
+}
+
+.contenido_visual{
+  background-color: #fff8f0;
+  border-left: 5px solid #7923db;
+  margin: 30px 20px;
+  padding: 15px;
+}
+
+/* ====== BLOQUE: fuentes ====== */
+.fuentes {
+  margin: 30px 20px;
+  padding: 15px;
+  background-color: #f0f9f0;
+  border-left: 4px solid #28a745;
+}
+
+.fuentes__titulo {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #155724;
+}
+
+.fuentes__lista {
+  padding-left: 20px;
+}
+
+.fuentes__item {
+  margin: 5px 0;
+}
+
+  .tabla-comparativa {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .tabla-comparativa th {
+    background-color: #007bff; /* azul */
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .tabla-comparativa td {
+    background-color: #f9f9f9; /* gris claro */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .tabla-comparativa tr:nth-child(even) td {
+    background-color: #e9ecef; /* rayado en filas pares */
+  }
+
+/* ====== BLOQUE: footer ====== */
+.footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top:  20px 30px;
+}
+
+.footer__autor,
+.footer__nota,
+.footer__mail,
+.footer__instituto,
+.footer__docente {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
